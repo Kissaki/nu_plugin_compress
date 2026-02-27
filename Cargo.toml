@@ -1,6 +1,6 @@
 [package]
 name = "nu_plugin_compress"
-version = "0.2.10"
+version = "26.1100.0"
 edition = "2024"
 authors = ["yybit <yybit2@gmail.com>"]
 license = "Apache-2.0"
