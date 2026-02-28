@@ -122,7 +122,7 @@ impl PluginCommand for CompressCommand {
                     "require binary|string input, got {}",
                     v.get_type()
                 ))
-                .with_label("Expected binary from pipeline", call.head))
+                .with_label("Expected binary from pipeline", call.head));
             }
         }
     }
