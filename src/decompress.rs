@@ -54,7 +54,12 @@ impl PluginCommand for DecompressCommand {
                 let span = byte_stream.span();
                 (byte_stream, span, pipeline_metadata)
             }
-            PipelineData::Value(Value::Binary { val, internal_span, .. }, pipeline_metadata) => {
+            PipelineData::Value(
+                Value::Binary {
+                    val, internal_span, ..
+                },
+                pipeline_metadata,
+            ) => {
                 let byte_stream =
                     ByteStream::read_binary(val, internal_span, engine.signals().clone());
 
@@ -65,7 +70,7 @@ impl PluginCommand for DecompressCommand {
                     "requires binary input, got {}",
                     v.get_type()
                 ))
-                .with_label("Expected binary from pipeline", call.head))
+                .with_label("Expected binary from pipeline", call.head));
             }
         };
 
