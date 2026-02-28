@@ -14,7 +14,7 @@ keywords = ["nu", "plugin", "compression", "gzip", "zstd"]
 [dependencies]
 bzip2 = "0.6.1"
 flate2 = "1.1.5"
-nu-plugin = "0.109.0"
-nu-protocol = { version = "0.109.0", features = ["plugin"] }
+nu-plugin = "0.110.0"
+nu-protocol = { version = "0.110.0", features = ["plugin"] }
 xz2 = "0.1.7"
 zstd = "0.13.3"
