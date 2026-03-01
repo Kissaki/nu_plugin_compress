@@ -70,7 +70,7 @@ impl PluginCommand for DecompressCommand {
                     "requires binary input, got {}",
                     v.get_type()
                 ))
-                .with_label("Expected binary from pipeline", call.head))
+                .with_label("Expected binary from pipeline", call.head));
             }
         };
 
